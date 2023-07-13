@@ -1,2 +1,5 @@
-#!/bin/bash
-gcc -o print main.c
+#include <stdio.h>
+int main () {
+puts("\"Programming is like building a multilingual puzzle");
+return 0;
+}
