@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "Enter the script file name: " script_name
+
+# Check if the script file exists
+if [ -f "$script_name" ]; then
+    if [ -x "$script_name" ]; then
+        echo "$script_name already has execute permission"
+    else
+        chmod +x "$script_name"  # Set the execute permission for the script
+        echo "Execute permission set for $script_name"
+    fi
+else
+    echo "$script_name does not exist"
+fi
+
