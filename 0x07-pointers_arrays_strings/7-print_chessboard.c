@@ -1,5 +1,3 @@
-7-Print_chessboard.c
-
 #include "main.h"
 /**
 * print_chessboard - Entry point
